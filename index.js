@@ -6,7 +6,7 @@ const { User } = require("./models/User");
 
 const app = express(); // function을 이용하여 express app 생성
 const port = 5000; // 포트 번호
-const uri = "mongodb+srv://ryongseong:abcd1234@node.sch9h9t.mongodb.net/?retryWrites=true&w=majority"
+const uri = process.env.MONGO_URI
 mongoose.set("strictQuery", false);
 
 // application/x-www-form-urlencoded
