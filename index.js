@@ -22,7 +22,7 @@ async function main() {
   await mongoose.connect(uri);
 }
 
-app.get('/', (req, res) => { res.send('안녕하세요!') })
+app.get('/', (req, res) => { res.send('Hello World!~~~') })
 
 app.post('/register', async(req, res)=> {
 
@@ -48,6 +48,5 @@ app.post('/register', async(req, res)=> {
 
 
 });
-
 
 app.listen(port, () => { console.log(`Example app listening on port ${port}!`) })
